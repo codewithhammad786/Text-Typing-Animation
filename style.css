@@ -1,0 +1,39 @@
+body{
+    background-image: url("1.jpg");
+}
+
+.wrap{
+    width: max-content;
+}
+
+.typing{
+    overflow: hidden;
+    white-space: nowrap;
+    color: aqua;
+    border-right: 1px solid black;
+    animation: typing 2s steps(20) infinite alternate,
+    blink 0.7s infinite;
+    margin-top: 180%;
+    padding-left: 150%;
+    font-size: 50px;
+    padding-right: 5px;
+}
+
+@keyframes typing{
+    0%{
+        width: 0%;
+        visibility: hidden;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: black;
+    }
+}
